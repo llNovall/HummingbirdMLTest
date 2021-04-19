@@ -364,7 +364,7 @@ public class HummingbirdAgent : Agent
     private void FixedUpdate()
     {
         //Avoid scenario where nearest flower nectar is stolen by opponent and not updated
-        if (!_nearestFlower)
+        if (_nearestFlower)
             if(!_nearestFlower.HasNectar)
                 UpdateNearestFlower();
     }
