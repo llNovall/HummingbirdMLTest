@@ -1,0 +1,13 @@
+behaviors:
+    Hummingbird:
+        trainer_type: ppo
+        hyperparameters:
+          batch_size: 2048
+          buffer_size: 20480
+        network_settings:
+          hidden_units: 256
+
+
+        time_horizon: 128
+        max_steps: 5.0e6
+    
